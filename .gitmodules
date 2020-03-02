@@ -1,0 +1,3 @@
+[submodule "themes/modern"]
+	path = themes/modern
+	url = https://github.com/webmandesign/modern
