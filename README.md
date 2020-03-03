@@ -1,6 +1,8 @@
-# VIP Go Skeleton
+Wikimedia Techblog
+==================
 
-Welcome to VIP! This repo is a starting point for building your VIP Go site, including all the base folders to be built on.
+This git repository contains configuration and plugins used by
+techblog.wikimedia.org.
 
 ## Guidebooks
 
@@ -23,11 +25,3 @@ All the directories in this repo are required, and will be available on producti
 ## Support
 
 If you need help with anything, VIP's support team is [just a ticket away](https://wpvip.com/documentation/vip-go/accessing-vip-support/).
-
-## Your content here
- 
-Feel free to add to or replace this README.md content with content unique to your project, for example:
- 
-* Project-specific notes; like a list of VIP environments and branches,
-* Workflow documentation; so everyone working in this repo can follow a defined process, or
-* Instructions for testing new features.
