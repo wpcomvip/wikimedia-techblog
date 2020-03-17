@@ -22,3 +22,11 @@ if ( function_exists( 'wpcom_vip_load_gutenberg' ) ) {
 	define( 'GUTENBERG_USE_PLUGIN', true );
 	wpcom_vip_load_gutenberg( true );
 }
+
+/**
+ * Disable New Relic browser monitoring.
+ *
+ * See mu-plugins/vip-helpers/vip-newrelic.php for implementation of
+ * the hook handler.
+ */
+add_action( 'template_redirect', 'wpcom_vip_disable_new_relic_js' );
