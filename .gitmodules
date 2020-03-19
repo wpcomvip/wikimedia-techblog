@@ -4,6 +4,3 @@
 [submodule "plugins/code-syntax-block"]
 	path = plugins/code-syntax-block
 	url = https://github.com/mkaz/code-syntax-block
-[submodule "plugins/wp-matomo"]
-	path = plugins/wp-piwik
-	url = https://github.com/braekling/WP-Matomo
