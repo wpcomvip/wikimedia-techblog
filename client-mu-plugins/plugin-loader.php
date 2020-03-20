@@ -30,3 +30,15 @@ if ( function_exists( 'wpcom_vip_load_gutenberg' ) ) {
  * the hook handler.
  */
 add_action( 'template_redirect', 'wpcom_vip_disable_new_relic_js' );
+
+/**
+ * Short circuit the ridiculous is_multi_author() function before it tries to
+ * query the database.
+ *
+ * @param string $transient Transient name
+ * @return bool True, always true
+ */
+function cmu_always_multi_author( $transient ) {
+	return true;
+}
+add_filter( 'pre_transient_is_multi_author',  'cmu_always_multi_author' );
