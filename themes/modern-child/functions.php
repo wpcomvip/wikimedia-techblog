@@ -26,3 +26,13 @@ function enqueue_parent_styles() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
+
+/**
+ * Filter X-hacker output.
+ */
+add_filter( 'wp_headers', function( $headers ) {
+    if ( isset( $headers['X-hacker'] ) ) {
+        unset( $headers['X-hacker'] );
+    }
+    return $headers;
+}, 999 );
