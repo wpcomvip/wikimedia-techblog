@@ -7,3 +7,6 @@
 [submodule "plugins/co-authors-plus"]
 	path = plugins/co-authors-plus
 	url = https://github.com/Automattic/Co-Authors-Plus
+[submodule "plugins/disable-emojis"]
+	path = plugins/disable-emojis
+	url = https://github.com/ryanhellyer/disable-emojis
