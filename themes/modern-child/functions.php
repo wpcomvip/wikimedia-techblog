@@ -36,3 +36,13 @@ add_filter( 'wp_headers', function( $headers ) {
     }
     return $headers;
 }, 999 );
+
+/**
+ * Show co-authors plus authors in RSS feed.
+ */
+add_filter( 'the_author', function( $display_name ) {
+	if ( is_feed() && function_exists( 'coauthors' ) ) {
+		$display_name = coauthors( null, null, null, null, false );
+	}
+	return $display_name;
+} );
