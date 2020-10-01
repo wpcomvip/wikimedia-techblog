@@ -1,9 +1,6 @@
 [submodule "themes/modern"]
 	path = themes/modern
 	url = https://github.com/webmandesign/modern
-[submodule "plugins/code-syntax-block"]
-	path = plugins/code-syntax-block
-	url = https://github.com/mkaz/code-syntax-block
 [submodule "plugins/co-authors-plus"]
 	path = plugins/co-authors-plus
 	url = https://github.com/Automattic/Co-Authors-Plus
