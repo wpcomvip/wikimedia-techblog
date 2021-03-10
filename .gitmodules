@@ -7,3 +7,6 @@
 [submodule "plugins/disable-emojis"]
 	path = plugins/disable-emojis
 	url = https://github.com/ryanhellyer/disable-emojis
+[submodule "plugins/application-passwords"]
+	path = plugins/application-passwords
+	url = https://github.com/WordPress/application-passwords.git
