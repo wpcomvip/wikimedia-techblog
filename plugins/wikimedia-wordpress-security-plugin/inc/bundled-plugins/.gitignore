@@ -1,0 +1,3 @@
+# We generally do not want to commit the composer files from bundled plugins.
+composer.json
+composer.lock
