@@ -2,11 +2,11 @@
 /*
  * We recommend all plugins for your site are
  * loaded in code, either from a file like this
- * one or from your theme (if the plugins are 
+ * one or from your theme (if the plugins are
  * specific to your theme and do not need to be
  * loaded as early as this in the WordPress boot
  * sequence.
- * 
+ *
  * @see https://vip.wordpress.com/documentation/vip-go/understanding-your-vip-go-codebase/
  */
 
@@ -39,3 +39,14 @@ function cmu_always_multi_author( $transient ) {
 	return true;
 }
 add_filter( 'pre_transient_is_multi_author',  'cmu_always_multi_author' );
+
+/**
+ * Allow api login using application-passwords even when account normally
+ * requires 2FA authentication.
+ */
+add_filter( 'two_factor_user_api_login_enable', function( $enable ) {
+	if ( did_action( 'application_password_did_authenticate' ) ) {
+		return true;
+	}
+	return $enable;
+} );
