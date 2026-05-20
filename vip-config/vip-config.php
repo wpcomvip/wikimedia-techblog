@@ -37,4 +37,4 @@ if ( isset( $_SERVER['HTTP_HOST'] ) && isset( $_SERVER['REQUEST_URI'] ) ) {
 		header( 'Location: https://' . $redirect_to_domain . $request_uri, true, 301 );
 		exit;
 	}
-} t
+}
